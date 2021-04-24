@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <title></title>
+  </head>
+  <body>
+    <!--header-->
+
+    <header>
+      <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+      </div>
+
+      <!-- style row mais nous allons utiliser flexbox
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 money">46546549815</div>
+
+          <div class="col-lg-3 money">41074.05</div>
+
+          <div class="col-lg-3 money">5465462</div>
+          <div class="col-lg-3 money">5465462</div>
+        </div>
+      </div> -->
+
+      <div class="container-fluid">
+        <div class="flex">
+          <div class="col-lg-3 money">
+            <h6>Tôtal</h6>
+            <span>46546549815</span>
+          </div>
+
+          <div class="col-lg-3 money">
+            <h6>Montant de Paiement</h6>
+            <span>41074.05</span>
+          </div>
+
+          <div class="col-lg-3 money">
+            <h6>Nombre des commissions</h6>
+            <span>0</span>
+          </div>
+
+          <div class="col-lg-3 money">
+            <h6>Restant</h6>
+
+            <span> 5465462</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- end header -->
+
+    <!--section-->
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- col left-->
+          <div class="col-md-12 col-lg-2 left">
+            <div>
+              <h2>semaine</h2>
+              <span>9545498</span>
+              <hr />
+            </div>
+
+            <div>
+              <h2>Mars</h2>
+              <span>2549512498</span>
+              <hr />
+            </div>
+
+            <div>
+              <h2>Avril</h2>
+              <span>2549512498</span>
+              <hr />
+            </div>
+
+            <div>
+              <h2>Dernier Mois</h2>
+              <span>2549512498</span>
+              <hr />
+            </div>
+          </div>
+          <!-- end col left-->
+
+          <!-- col center-->
+
+          <div class="col-md-12 col-lg-5 center">
+            <!-- courbe-->
+
+            <canvas
+              id="schema"
+              height="225"
+              width="500"
+              style="border: 1px solid"
+            >
+              Votre navigateur ne supporte pas la balise canvas
+            </canvas>
+            <!-- courbe-->
+
+            <input
+              type="text"
+              id="myInput"
+              onkeyup="myFunction()"
+              placeholder="Search for names.."
+            />
+
+            <table id="myTable">
+              <tr class="header">
+                <th style="width: 60%">label</th>
+                <th style="width: 40%">value</th>
+                <th style="width: 60%">operation</th>
+                <th style="width: 40%">total</th>
+              </tr>
+              <tr>
+                <td>24-05-21</td>
+                <td>7458924</td>
+                <td>5521656</td>
+                <td>9879266</td>
+              </tr>
+              <tr>
+                <td>24-05-21</td>
+                <td>7458924</td>
+                <td>5521656</td>
+                <td>9879266</td>
+              </tr>
+              <tr>
+                <td>24-05-21</td>
+                <td>7458924</td>
+                <td>5521656</td>
+                <td>9879266</td>
+              </tr>
+              <tr>
+                <td>24-05-21</td>
+                <td>7458924</td>
+                <td>5521656</td>
+                <td>9879266</td>
+              </tr>
+              <tr>
+                <td>24-05-21</td>
+                <td>7458924</td>
+                <td>5521656</td>
+                <td>9879266</td>
+              </tr>
+            </table>
+            <div class="pagination">
+              <a href="#">&laquo;</a>
+              <a href="#">1</a>
+              <a class="active" href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">&raquo;</a>
+            </div>
+          </div>
+          <!--end  col center-->
+
+          <!-- col right-->
+          <div class="col-md-12 col-lg-5 right">
+            <!--graphique -->
+
+            <div class="stats">
+              <h2>exemple graphique</h2>
+              <ul>
+                <li>
+                  Fonction f1 sur 10000 itérations&nbsp;:
+                  <span class="percent v70">14,7 ms</span>
+                </li>
+                <li>
+                  Fonction f2 sur 10000 itérations&nbsp;:
+                  <span class="percent v30">6,3 ms</span>
+                </li>
+                <li>
+                  Fonction f3 sur 10000 itérations&nbsp;:
+                  <span class="percent v100">21 ms</span>
+                </li>
+              </ul>
+            </div>
+
+            <!--end graphique -->
+
+            <input
+              type="text"
+              id="myInput"
+              onkeyup="myFunction()"
+              placeholder="Search for names.."
+            />
+
+            <table id="myTable">
+              <tr class="header">
+                <th style="width: 60%">label</th>
+                <th style="width: 40%">value</th>
+                <th style="width: 60%">operation</th>
+                <th style="width: 40%">total</th>
+              </tr>
+              <tr>
+                <td>Ariane</td>
+                <td>7458924</td>
+                <td>5521656</td>
+                <td>9879266</td>
+              </tr>
+              <tr>
+                <td>Thomas</td>
+                <td>7458924</td>
+                <td>5521656</td>
+                <td>9879266</td>
+              </tr>
+              <tr>
+                <td>Robert</td>
+                <td>7458924</td>
+                <td>5521656</td>
+                <td>9879266</td>
+              </tr>
+              <tr>
+                <td>Dubois</td>
+                <td>7458924</td>
+                <td>5521656</td>
+                <td>9879266</td>
+              </tr>
+              <tr>
+                <td>Dubois</td>
+                <td>7458924</td>
+                <td>5521656</td>
+                <td>9879266</td>
+              </tr>
+            </table>
+
+            <div class="pagination">
+              <a href="#">&laquo;</a>
+              <a href="#">1</a>
+              <a class="active" href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">&raquo;</a>
+            </div>
+          </div>
+
+          <!-- end col right-->
+        </div>
+      </div>
+    </section>
+    <!--and section-->
+
+    <!-- <footer class="container-fluid">
+      <div class="footer">
+        <p>Footer</p>
+      </div>
+    </footer> -->
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

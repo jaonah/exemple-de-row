@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style  navbar */
+.navbar {
+  width: 100%;
+  background-color: rgb(9, 72, 109);
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #11a099;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #11a099;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+/*  end navbar */
+
+/* money   */
+
+/*
+.money {
+  border: #11a099 1px solid;
+
+  background-color: #444;
+  height: 100px;
+}*/
+
+.flex {
+  display: flex;
+  flex-direction: wrap;
+  text-align: center;
+  font-weight: bold;
+  
+}
+.flex > div {
+  padding: 50px;
+}
+
+.money {
+  border: #11a099 1px solid;
+  margin-left: 10px;
+}
+
+/* end money */
+
+/* section */
+
+.left {
+  height: 500px;
+
+  border-radius: 30px;
+}
+.center {
+  border-radius: 30px;
+}
+
+.right {
+  border-radius: 30px;
+}
+
+/* tableau */
+#myInput {
+  background-image: url("/css/searchicon.png"); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th,
+#myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+/* end tableau */
+
+/* Pagination links */
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/* graphique */
+
+/* suppression des puces sur les listes */
+div.stats ul {
+  list-style: none;
+}
+div.stats .percent {
+  /* on passe l'élément span correspondant à la classe .percent
+	en affichage en bloc pour pouvoir lui donner une dimension.
+	Diverses autres choses sont modifiées ensuite à votre convenance. */
+  display: block; /* on affiche le span sous forme de bloc pour lui affecter des dimensions */
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px 10px;
+  padding: 0 5px;
+  text-align: right;
+  color: #fff;
+  font-weight: bold;
+  font-family: monospace;
+  -moz-border-radius: 5px; /* un petit arrondi pour les navigateurs le supportant */
+  border-bottom: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  cursor: default;
+}
+/* Multicolore */
+.v100 {
+  background: #970000;
+  width: 100%;
+}
+.v90 {
+  background: #ff0000;
+  width: 90%;
+}
+.v80 {
+  background: #ff6600;
+  width: 80%;
+}
+.v70 {
+  background: #ff9c00;
+  width: 70%;
+}
+.v60 {
+  background: #ffd800;
+  width: 60%;
+}
+.v50 {
+  background: #eaff00;
+  width: 50%;
+}
+.v40 {
+  background: #baff00;
+  width: 40%;
+}
+.v30 {
+  background: #78ff00;
+  width: 30%;
+}
+.v20 {
+  background: #12ff00;
+  width: 20%;
+}
+.v10 {
+  background: #00ff60;
+  width: 10%;
+}
+
+/* graphique */
+
+/*end  section */
+
+/*  footer */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #444;
+  color: white;
+  text-align: center;
+}
+
+/* end footer */
